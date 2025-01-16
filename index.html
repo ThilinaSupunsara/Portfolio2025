@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYD80 Portfolio</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-900 text-gray-100">
+    <!-- Header Section -->
+    <header class="bg-gray-800 py-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-blue-400">
+                MYD80
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-blue-400 transition duration-300">Home</a>
+                <a href="#bulletin" class="hover:text-blue-400 transition duration-300">Bulletin Board</a>
+                <a href="#compliance" class="hover:text-blue-400 transition duration-300">Compliance Toolkit</a>
+                <a href="#account" class="hover:text-blue-400 transition duration-300">My Account</a>
+                <a href="#legal" class="hover:text-blue-400 transition duration-300">Legal Information</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-100 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-gray-700 hidden">
+            <a href="#home" class="block py-3 px-4 hover:bg-gray-600 transition duration-300">Home</a>
+            <a href="#bulletin" class="block py-3 px-4 hover:bg-gray-600 transition duration-300">Bulletin Board</a>
+            <a href="#compliance" class="block py-3 px-4 hover:bg-gray-600 transition duration-300">Compliance Toolkit</a>
+            <a href="#account" class="block py-3 px-4 hover:bg-gray-600 transition duration-300">My Account</a>
+            <a href="#legal" class="block py-3 px-4 hover:bg-gray-600 transition duration-300">Legal Information</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Swiper Background Slider -->
+        <div class="swiper-container absolute inset-0 z-0">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-gray-800"></div>
+                <div class="swiper-slide bg-gray-700"></div>
+                <div class="swiper-slide bg-gray-600"></div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+                Welcome to MYD80
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-8 animate-fade-in delay-200">
+                Your trusted partner in compliance and financial solutions.
+            </p>
+            <!-- Call-to-Action Buttons -->
+            <div class="flex justify-center space-x-4 animate-fade-in delay-400">
+                <a href="#bulletin" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition duration-300">
+                    Explore Bulletin Board
+                </a>
+                <a href="#compliance" class="bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                    Compliance Toolkit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <!-- Section Title -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+                Bulletin Board
+            </h2>
+
+            <!-- Swiper Slider for Bulletin Items -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Bulletin Item 1 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">M Test</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the M Test bulletin item.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">N Test</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the N Test bulletin item.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 3 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">A Bulletin Board 1</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the A Bulletin Board 1 item.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 4 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">ACTR Special District Taxonomies Report</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the ACTR Special District Taxonomies Report.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 5 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Kutak Rock Client Alert</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the Kutak Rock Client Alert.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 6 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">SEC Action on Disclosure</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the SEC action on Disclosure.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 7 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">NFMA White Paper on CYBER Event Disclosures</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the NFMA white paper on CYBER event disclosures.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 8 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Thoughts and Considerations in the Time of COVID-19</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about thoughts and considerations during COVID-19.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 9 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Voluntary Disclosure Template with Disclaimer Language</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the voluntary disclosure template.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 10 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">The Importance of Disclosure for our Municipal Markets</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the importance of disclosure for municipal markets.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 11 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">GASB Proposes to Postpone Effective Dates of Certain Pronouncements</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about GASB's proposal to postpone effective dates.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 12 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">COVID-19 Illustrative Disclosures</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about COVID-19 illustrative disclosures.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 13 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">SEC Staff Guidance Regarding Secondary Market Disclosure</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about SEC staff guidance on secondary market disclosure.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 14 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">SEC to Municipal Issuers and Obligated Persons Alert</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the SEC alert to municipal issuers and obligated persons.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 15 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Application of Antifraud Provisions to Public Statements of Issuers and Obligated Persons of Municipal Securities in the Secondary Market</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the application of antifraud provisions.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 16 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">SEC Proposes New Guidance on Role of Municipal Advisers in Private Placements</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about the SEC's proposed guidance on municipal advisers.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bulletin Item 17 -->
+                    <div class="swiper-slide">
+                        <div class="bulletin-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">GREEN BONDS</h3>
+                            <p class="text-gray-400 mb-4">
+                                Details about green bonds.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <!-- Section Title -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+                Compliance Toolkit
+            </h2>
+
+            <!-- Swiper Slider for Toolkit Items -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Toolkit Item 1 -->
+                    <div class="swiper-slide">
+                        <div class="toolkit-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">View Compliance Toolkit</h3>
+                            <p class="text-gray-400 mb-4">
+                                Access the complete compliance toolkit for your needs.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Explore Toolkit →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="toolkit-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">View My Account</h3>
+                            <p class="text-gray-400 mb-4">
+                                Manage your account settings and preferences.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                View Account →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 3 -->
+                    <div class="swiper-slide">
+                        <div class="toolkit-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">File a Document</h3>
+                            <p class="text-gray-400 mb-4">
+                                Submit and manage your documents securely.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                File Document →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 4 -->
+                    <div class="swiper-slide">
+                        <div class="toolkit-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">View Document History</h3>
+                            <p class="text-gray-400 mb-4">
+                                Track and review your document submission history.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                View History →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 5 -->
+                    <div class="swiper-slide">
+                        <div class="toolkit-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">View Policies & Procedures</h3>
+                            <p class="text-gray-400 mb-4">
+                                Access and review company policies and procedures.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                View Policies →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 6 -->
+                    <div class="swiper-slide">
+                        <div class="toolkit-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Continuing Education</h3>
+                            <p class="text-gray-400 mb-4">
+                                Explore continuing education resources and courses.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Explore Courses →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Toolkit Item 7 -->
+                    <div class="swiper-slide">
+                        <div class="toolkit-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Search System</h3>
+                            <p class="text-gray-400 mb-4">
+                                Search the system for documents, policies, and more.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Search Now →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <!-- Section Title -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+                My Account
+            </h2>
+
+            <!-- Swiper Slider for Account Items -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Account Item 1 -->
+                    <div class="swiper-slide">
+                        <div class="account-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Profile Information</h3>
+                            <p class="text-gray-400 mb-4">
+                                View and update your profile information.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Edit Profile →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Account Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="account-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Change Password</h3>
+                            <p class="text-gray-400 mb-4">
+                                Update your account password securely.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Change Password →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Account Item 3 -->
+                    <div class="swiper-slide">
+                        <div class="account-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Document History</h3>
+                            <p class="text-gray-400 mb-4">
+                                Track and review your document submission history.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                View History →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Account Item 4 -->
+                    <div class="swiper-slide">
+                        <div class="account-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Notifications</h3>
+                            <p class="text-gray-400 mb-4">
+                                Manage your notification preferences.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Manage Notifications →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Account Item 5 -->
+                    <div class="swiper-slide">
+                        <div class="account-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Billing Information</h3>
+                            <p class="text-gray-400 mb-4">
+                                View and update your billing details.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Update Billing →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Account Item 6 -->
+                    <div class="swiper-slide">
+                        <div class="account-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Security Settings</h3>
+                            <p class="text-gray-400 mb-4">
+                                Enhance your account security settings.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Manage Security →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <!-- Section Title -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+                Legal Information
+            </h2>
+
+            <!-- Swiper Slider for Legal Items -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Legal Item 1 -->
+                    <div class="swiper-slide">
+                        <div class="legal-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Privacy Policy</h3>
+                            <p class="text-gray-400 mb-4">
+                                Learn how we collect, use, and protect your personal information.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legal Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="legal-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Terms of Service</h3>
+                            <p class="text-gray-400 mb-4">
+                                Understand the terms and conditions for using our services.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legal Item 3 -->
+                    <div class="swiper-slide">
+                        <div class="legal-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Cookie Policy</h3>
+                            <p class="text-gray-400 mb-4">
+                                Find out how we use cookies to enhance your experience.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legal Item 4 -->
+                    <div class="swiper-slide">
+                        <div class="legal-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Disclaimer</h3>
+                            <p class="text-gray-400 mb-4">
+                                Review our disclaimer regarding the use of our website.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legal Item 5 -->
+                    <div class="swiper-slide">
+                        <div class="legal-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Data Protection</h3>
+                            <p class="text-gray-400 mb-4">
+                                Learn about our data protection practices and policies.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legal Item 6 -->
+                    <div class="swiper-slide">
+                        <div class="legal-card p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Compliance</h3>
+                            <p class="text-gray-400 mb-4">
+                                Discover how we ensure compliance with legal regulations.
+                            </p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <!-- Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1: About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About Us</h3>
+                    <p class="text-gray-400">
+                        We provide top-notch compliance and financial solutions tailored to your needs.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-blue-400">Home</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-blue-400">Bulletin Board</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-blue-400">Compliance Toolkit</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-blue-400">My Account</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Email: info@myd80.com</li>
+                        <li class="text-gray-400">Phone: +1 (123) 456-7890</li>
+                        <li class="text-gray-400">Address: 123 Financial St, Suite 456</li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social Media -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="footer-link text-gray-400 hover:text-blue-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.56v14.91c0 .97-.79 1.76-1.76 1.76H1.76C.79 21.23 0 20.44 0 19.47V4.56C0 3.59.79 2.8 1.76 2.8h20.48c.97 0 1.76.79 1.76 1.76zM9.6 18.24V9.6H7.2v8.64h2.4zm-1.2-9.84c.84 0 1.44-.6 1.44-1.44-.02-.84-.6-1.44-1.44-1.44-.84 0-1.44.6-1.44 1.44 0 .84.6 1.44 1.44 1.44zm10.8 9.84v-4.8c0-2.52-1.44-3.6-3.36-3.6-1.56 0-2.28.84-2.64 1.44v-1.2H12v8.64h2.4v-4.32c0-1.08.24-2.16 1.56-2.16 1.32 0 1.32 1.2 1.32 2.28v4.2H20z"/></svg>
+                        </a>
+                        <a href="#" class="footer-link text-gray-400 hover:text-blue-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 5.924c-.806.358-1.67.6-2.577.708a4.515 4.515 0 001.98-2.49 9.037 9.037 0 01-2.86 1.09 4.507 4.507 0 00-7.68 4.108 12.8 12.8 0 01-9.29-4.71 4.507 4.507 0 001.394 6.014 4.48 4.48 0 01-2.04-.563v.057a4.507 4.507 0 003.616 4.415 4.52 4.52 0 01-2.034.077 4.507 4.507 0 004.21 3.13 9.038 9.038 0 01-5.6 1.93c-.364 0-.724-.02-1.08-.063a12.78 12.78 0 006.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.195-.004-.39-.013-.584a9.17 9.17 0 002.26-2.34z"/></svg>
+                        </a>
+                        <a href="#" class="footer-link text-gray-400 hover:text-blue-400">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.42 3.44 8.1 7.9 8.1v-5.72H8.9v-2.38h2.04V9.85c0-2.02 1.23-3.13 3.04-3.13.88 0 1.8.16 1.8.16v1.98h-1.02c-1 0-1.32.62-1.32 1.26v1.5h2.22l-.36 2.38h-1.86v5.72c4.46-.4 7.9-3.68 7.9-8.1 0-5.5-4.46-9.96-9.96-9.96z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-gray-400 border-t border-gray-700 pt-8">
+                <p>&copy; 2023 MYD80. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
